@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adobe Services</title>
+
+<style>
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f3f5f7;
+    margin:0;
+    padding:40px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:24px;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* MAIN CARDS */
+
+.service-card{
+    background:white;
+    border:4px solid #0b3a67;
+    padding:28px 20px;
+    min-height:320px;
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+    cursor:pointer;
+}
+
+.service-card:hover{
+    transform:scale(1.06);
+    box-shadow:0 18px 35px rgba(0,0,0,0.18);
+}
+
+.icon-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:24px;
+}
+
+.icon-wrapper img{
+    width:85px;
+    height:85px;
+    object-fit:contain;
+    transition:transform 0.25s ease;
+}
+
+.service-card:hover .icon-wrapper img{
+    transform:scale(1.1);
+}
+
+.service-title{
+    font-size:1.2rem;
+    font-weight:bold;
+    margin-bottom:12px;
+    text-align:center;
+}
+
+.service-text{
+    font-size:0.95rem;
+    line-height:1.5;
+    color:#4b5563;
+    text-align:center;
+}
+
+/* SIGN BOX */
+
+.sign-box{
+    width:1100px;
+    height:60px;
+    margin:24px auto 0 auto;
+
+    background:white;
+    border:4px solid #0b3a67;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+    cursor:pointer;
+}
+
+.sign-box:hover{
+    transform:scale(1.02);
+    box-shadow:0 18px 35px rgba(0,0,0,0.18);
+}
+
+.sign-box img{
+    width:32px;
+    height:32px;
+    object-fit:contain;
+    transition:transform 0.25s ease;
+}
+
+.sign-box:hover img{
+    transform:scale(1.1);
+}
+
+.sign-text{
+    font-size:0.95rem;
+    font-weight:bold;
+    color:#1f2937;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="services-grid">
+
+    <div class="service-card">
+        <div class="icon-wrapper">
+            <img src="images/Adobe Express Logo.png" alt="Adobe Express Logo">
+        </div>
+        <div class="service-title">Adobe Express</div>
+        <div class="service-text">
+            Create graphics, videos, and web pages with simple drag-and-drop tools for social media, marketing, and personal projects.
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="icon-wrapper">
+            <img src="images/Acrobat Logo.png" alt="Acrobat Logo">
+        </div>
+        <div class="service-title">Adobe Acrobat</div>
+        <div class="service-text">
+            Edit, sign, share, and organize PDFs with tools for collaboration and secure document workflows.
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="icon-wrapper">
+            <img src="images/Adobe CC Logo.png" alt="Adobe Creative Cloud Logo">
+        </div>
+        <div class="service-title">Adobe Creative Cloud</div>
+        <div class="service-text">
+            Access Photoshop, Illustrator, Premiere Pro, Lightroom, and more professional creative tools.
+        </div>
+    </div>
+
+</div>
+
+<!-- SIGN BOX (BOTTOM ROW) -->
+
+<div class="sign-box">
+    <img src="images/Adobe Sign Logo.png" alt="Adobe Sign Logo">
+    <div class="sign-text">
+        Adobe Sign licensing is available upon special request
+    </div>
+</div>
+
+</body>
+</html>
